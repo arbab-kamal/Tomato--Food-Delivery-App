@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 ///Placing order from frontend
 
 const placeOrder = async (req, res) => {
-    const front_end_url = 'https://front-end-346d.onrender.com'
+    const front_end_url = 'https://front-end-rssj.onrender.com'
     try {
         const newOrder = new orderModel({
             userId: req.body.userId,
